@@ -1,0 +1,44 @@
+#home>h1 {
+    color: #FF9800;
+    font-family: 'pumpkin2';
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 0;
+
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 40px black;
+
+}
+
+#start-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 30vh;
+    text-shadow: 0 0 10px #ff9800, 0 0 20px #ff9800;
+}
+
+.game-board {
+    line-height: 2;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.game-board>table {
+    border-collapse: collapse;
+}
+
+tr>td {
+    border-bottom: 1px solid #ff5722;
+}
+
+td:last-child {
+    text-align: end;
+    padding: 0 20px;
+}

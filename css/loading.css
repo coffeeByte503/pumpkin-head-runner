@@ -1,0 +1,32 @@
+#loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'pumpkin';
+    color: #FF9800;
+    font-size: 50px;
+    z-index: 1;
+    background: #111;
+}
+
+#loading>span {
+    animation: loading 1s infinite alternate;
+}
+
+#loading>:nth-child(2n) {
+    animation-delay: 0.2s;
+}
+
+#loading>:nth-child(3n) {
+    animation-delay: 0.4s;
+}
+
+@keyframes loading {
+    from {
+        transform: translateY(0)
+    }
+
+    to {
+        transform: translateY(-30px)
+    }
+}

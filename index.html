@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pumkin boy run</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/right-menu.css">
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+
+<body>
+    <main id="app">
+        <div id="terror">
+            <img src="img/terror.jpg" alt="terror">
+        </div>
+        <div id="message-container">
+            <p id="message"></p>
+        </div>
+        <section id="loading">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </section>
+        <section id="home">
+            <h1>Pumkin Boy Runner</h1>
+            <div class="game-board">
+                <table>
+                    <tr>
+                        <td>Atemps</td>
+                        <td id="attemps">0</td>
+                    </tr>
+                    <tr>
+                        <td>Best score</td>
+                        <td id="bestScore">0</td>
+                    </tr>
+                    <tr>
+                        <td>current score</td>
+                        <td id="currentScore">0</td>
+                    </tr>
+                </table>
+            </div>
+            <button id="start-btn">START</button>
+
+            <footer>
+                <p>&copy; Luis Calderón 2020, v1.0.0</p>
+            </footer>
+        </section>
+    </main>
+    <script src="js modules/util.js"></script>
+    <script src="js modules/layer.js"></script>
+
+    <!-- ENGINE -->
+    <script src="js modules/engine/Graphics.js"></script>
+    <script src="js modules/engine/Audio.js"></script>
+    <script src="js modules/engine/Renderer.js"></script>
+    <script src="js modules/engine/ParalaxBackground.js"></script>
+    <script src="js modules/engine/SpriteSheet.js"></script>
+
+    <script src="js modules/engine/entities/Entity.js"></script>
+    <script src="js modules/engine/entities/Obstacles.js"></script>
+    <script src="js modules/engine/entities/Player.js"></script>
+
+    <script src="js modules/main.js"></script>
+</body>
+
+</html>
